@@ -105,8 +105,6 @@ header .right .register {
 
 .hiring {
   background: #F8F8F8;
-}
-.hiring .hiring-wrapper {
   padding-top: 80px;
   padding-bottom: 95px;
 }
@@ -287,8 +285,8 @@ header .right .register {
 }
 
 .utilities {
-  padding-top: 65px;
-  padding-bottom: 90px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .utilities .left {
   margin-right: 0px;
@@ -399,6 +397,9 @@ header .right .register {
 }
 .special .content .item .title {
   margin-bottom: 40px;
+}
+.special .content .item .have-text {
+  padding: 10px;
 }
 .special .content .item .desc {
   font-family: Arial;

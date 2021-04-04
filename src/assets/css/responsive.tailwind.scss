@@ -40,6 +40,8 @@
     padding: 0 20px !important;
   }
   .utilities {
+    padding-top: 65px !important;
+    padding-bottom: 90px !important;
     .left {
       margin-right: 31px !important;
       padding: 0 !important;
@@ -57,7 +59,11 @@
       gap: 94px;
     }
   }
-
+  .special {
+    .have-text {
+      padding: 0 !important;
+    }
+  }
   .story {
     width: 40% !important;
     &.have-image {

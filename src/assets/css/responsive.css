@@ -48,6 +48,11 @@
     padding: 0 20px !important;
   }
 
+  .utilities {
+    padding-top: 65px !important;
+    padding-bottom: 90px !important;
+  }
+
   .utilities .left {
     margin-right: 31px !important;
     padding: 0 !important;
@@ -67,6 +72,10 @@
 
   footer .footer-menu {
     gap: 94px;
+  }
+
+  .special .have-text {
+    padding: 0 !important;
   }
 
   .story {

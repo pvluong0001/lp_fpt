@@ -123,9 +123,9 @@ header {
 // =================== hiring ===================
 .hiring {
   background: $grayColor;
+  padding-top: 80px;
+  padding-bottom: 95px;
   .hiring-wrapper {
-    padding-top: 80px;
-    padding-bottom: 95px;
     .btn {
       margin-top: 20px;
     }
@@ -311,8 +311,8 @@ header {
 
 // =================== utilities ===================
 .utilities {
-  padding-top: 65px;
-  padding-bottom: 90px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   .left {
     margin-right: 0px;
     padding: 10px;
@@ -430,6 +430,9 @@ header {
       }
       .title {
         margin-bottom: 40px;
+      }
+      .have-text {
+        padding: 10px;
       }
       .desc {
         font-family: Arial;
