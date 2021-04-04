@@ -291,7 +291,8 @@ header .right .register {
   padding-bottom: 90px;
 }
 .utilities .left {
-  margin-right: 31px;
+  margin-right: 0px;
+  padding: 10px;
 }
 .utilities .left .title-wrapper .title {
   font-family: Yeseva One;
@@ -539,9 +540,6 @@ footer .full-line {
   background: #145E81;
   height: 1px;
 }
-footer .footer-menu {
-  gap: 94px;
-}
 footer .content {
   padding: 50px 0;
 }
@@ -604,6 +602,10 @@ footer .content ul li .text {
   height: 3px;
   background: linear-gradient(94.56deg, #FFB58F 0%, #FF828C 100%);
   margin-right: 20px;
+}
+
+header.container, .fville .container {
+  padding: 10px !important;
 }
 
 /*# sourceMappingURL=main.css.map */

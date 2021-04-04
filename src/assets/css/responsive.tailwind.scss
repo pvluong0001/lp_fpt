@@ -1,6 +1,6 @@
 @screen md {
-  header.container {
-    padding: 10px !important;
+  .container {
+    padding: 0 !important;
   }
   .welcome-wrapper {
     background: url("../images/1.png"), url("../images/2.png") !important;
@@ -40,6 +40,10 @@
     padding: 0 20px !important;
   }
   .utilities {
+    .left {
+      margin-right: 31px !important;
+      padding: 0 !important;
+    }
     .right {
       width: 40% !important;
     }
@@ -48,6 +52,9 @@
     padding: 100px 0 !important;
     .logo {
       margin-right: 120px !important;
+    }
+    .footer-menu {
+      gap: 94px;
     }
   }
 

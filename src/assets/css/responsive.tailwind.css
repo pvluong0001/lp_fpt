@@ -1,6 +1,6 @@
 @screen md {
-  header.container {
-    padding: 10px !important;
+  .container {
+    padding: 0 !important;
   }
 
   .welcome-wrapper {
@@ -45,6 +45,10 @@
     padding: 0 20px !important;
   }
 
+  .utilities .left {
+    margin-right: 31px !important;
+    padding: 0 !important;
+  }
   .utilities .right {
     width: 40% !important;
   }
@@ -54,6 +58,9 @@
   }
   footer .logo {
     margin-right: 120px !important;
+  }
+  footer .footer-menu {
+    gap: 94px;
   }
 
   .story {

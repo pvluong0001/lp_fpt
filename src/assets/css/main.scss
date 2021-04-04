@@ -314,7 +314,8 @@ header {
   padding-top: 65px;
   padding-bottom: 90px;
   .left {
-    margin-right: 31px;
+    margin-right: 0px;
+    padding: 10px;
     .title-wrapper {
       .title {
         font-family: Yeseva One;
@@ -580,9 +581,6 @@ footer {
     background: #145E81;
     height: 1px;
   }
-  .footer-menu {
-    gap: 94px;
-  }
   .content {
     padding: 50px 0;
     .logo {
@@ -653,3 +651,9 @@ footer {
   margin-right: 20px;
 }
 // =================== end helper ===================
+
+// =================== common ===================
+header.container, .fville .container {
+  padding: 10px !important;
+}
+// =================== end common ===================
