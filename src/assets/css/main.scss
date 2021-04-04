@@ -1,0 +1,655 @@
+@font-face {
+  font-family: 'Roboto', serif;
+  src: url("../font/Roboto-Regular.ttf")
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("../font/YesevaOne-Regular.ttf")
+}
+
+$mainColor: #04967C;
+$grayColor: #F8F8F8;
+
+// =================== nav ===================
+nav {
+  height: 100vh;
+  padding-top: 28px;
+  padding-right: 18px;
+  padding-left: 42px;
+  .close {
+    margin-bottom: 33px;
+  }
+  .menu {
+    gap: 14px;
+    a {
+      display: block;
+      cursor: pointer;
+      &:hover:not(.register) {
+        color: $mainColor;
+      }
+    }
+  }
+}
+// =================== end nav ===================
+
+// =================== header ===================
+header {
+  padding-top: 24px;
+  padding-bottom: 26px;
+  .left {
+  }
+  .right {
+    .menu {
+      gap: 20px;
+      font-family: Arial;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+    }
+    .register {
+      margin-left: 55px;
+    }
+  }
+}
+// =================== end header ===================
+
+// =================== banner ===================
+.banner {
+  background-color: $mainColor;
+  .welcome-wrapper {
+    .welcome {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 60px;
+      font-size: 50px;
+      /* identical to box height */
+      color: $mainColor;
+      text-shadow: 0 0 2px #fff;
+      margin-right: 52px;
+      margin-bottom: 25px;
+    }
+    .go-fviile {
+      border-left: 2px solid #fff;
+      padding-left: 23px;
+      .text {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 58px;
+        /* identical to box height */
+        color: #FFFFFF;
+        margin-bottom: 16px;
+      }
+      .sub {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        /* identical to box height */
+        color: #FFFFFF;
+      }
+    }
+  }
+  .slider {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .slider-navigation {
+      height: 50px;
+      background: #000;
+      color: #000;
+      z-index: 9;
+      .arrow-left, .arrow-right {
+        padding: 10px 5px;
+        img {
+          width: 50%;
+        }
+        &:hover {
+          background: #353434;
+        }
+      }
+    }
+  }
+}
+// =================== end banner ===================
+
+// =================== hiring ===================
+.hiring {
+  background: $grayColor;
+  .hiring-wrapper {
+    padding-top: 80px;
+    padding-bottom: 95px;
+    .btn {
+      margin-top: 20px;
+    }
+    .fixed-block {
+      background: url("../images/group.png") no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      margin-right: 20px;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .first {
+      background: linear-gradient(1.47deg, #04967C -14.69%, rgba(4, 150, 124, 0) 117.23%);
+      filter: drop-shadow(0px 4px 12px rgba(158, 158, 158, 0.25));
+      padding: 9px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      & > .flex {
+        box-sizing: border-box;
+        padding: 80px 30px 30px 30px;
+        width: 100%;
+        height: 100%;
+        margin-right: 20px;
+        .bonus {
+          font-family: Arial;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 25px;
+          /* identical to box height, or 156% */
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.15em;
+          margin-bottom: 10px;
+          padding: 5px 10px;
+          border-radius: 21px;
+          background: rgba(255, 255, 255, 0.2);
+          color: #fff;
+        }
+        .salary {
+          font-family: 'Yeseva One';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 35px;
+          line-height: 50px;
+          /* identical to box height, or 143% */
+          display: flex;
+          align-items: center;
+          color: #F6F6F6;
+          text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);
+        }
+        .condition {
+          font-family: Arial;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 30px;
+          /* identical to box height, or 214% */
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          color: #EBEBEB;
+        }
+      }
+    }
+    .hiring-swiper-container {
+      .swiper-wrapper {
+        gap: 20px;
+        .member {
+          margin-left: 12px;
+          margin-top: 8px;
+          box-shadow: 2px 4px 12px rgba(158, 158, 158, 0.25);
+          transition: all 0.4s;
+          width: 300px;
+          .head {
+            top: -8px;
+            left: -12px;
+            gap: 10px;
+            .number {
+              background: $mainColor;
+              padding: 14px 18px;
+              font-family: Roboto;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 40px;
+              line-height: 47px;
+              /* identical to box height */
+              display: flex;
+              align-items: center;
+              text-align: center;
+              color: #F8F8F8;
+            }
+            .title {
+              font-style: normal;
+              font-weight: 300;
+              font-size: 20px;
+              line-height: 23px;
+              color: #000000;
+              .font-bold {
+                font-weight: 900;
+              }
+            }
+          }
+          .body {
+            padding: 115px 30px 44px 30px;
+            .dev-type {
+              font-family: Arial;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 23px;
+              /* identical to box height */
+              align-items: center;
+              color: #AFAFAF;
+              margin-bottom: 20px;
+            }
+            .salary {
+              font-family: Arial;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 30px;
+              line-height: 22px;
+              /* identical to box height, or 73% */
+              align-items: center;
+              color: #000000;
+            }
+            .btn {
+              margin-top: 44px;
+            }
+          }
+          &:hover {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+// =================== end hiring ===================
+
+// =================== fville ===================
+.fville {
+  height: 700px;
+  .layer-image {
+    background: url("../images/fville.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .layer {
+    background: linear-gradient(3.81deg, rgba(12, 128, 86, 0.72) 11.03%, rgba(222, 222, 222, 0.434556) 75.03%, rgba(255, 255, 255, 0) 97.39%);
+  }
+  .content {
+    padding-bottom: 30px;
+    .first {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 120px;
+      line-height: 139px;
+      /* identical to box height */
+      align-items: center;
+      color: #FFFFFF;
+      margin-right: 27px;
+    }
+    .description {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      /* or 125% */
+      align-items: center;
+      color: #FFFFFF;
+    }
+  }
+}
+// =================== end fville ===================
+
+// =================== utilities ===================
+.utilities {
+  padding-top: 65px;
+  padding-bottom: 90px;
+  .left {
+    margin-right: 31px;
+    .title-wrapper {
+      .title {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        /* identical to box height */
+        align-items: center;
+        color: #25292F;
+      }
+    }
+    .description {
+      margin-top: 40px;
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      /* or 137% */
+      align-items: center;
+      color: #4A4A4A;
+      margin-bottom: 21px;
+    }
+  }
+  .right {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+// =================== end utilities ===================
+
+// =================== other-utilities ===================
+.other-utilities {
+  background: $grayColor;
+  padding-top: 95px;
+  padding-bottom: 110px;
+  .title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 22px;
+    /* or 55% */
+    align-items: center;
+    text-align: center;
+    color: $mainColor;
+    margin-bottom: 25px;
+  }
+  .desc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+    align-items: center;
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 52px;
+  }
+  .images {
+    .main-image {
+      width: 100%;
+    }
+    .flex {
+      gap: 20px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+// =================== end other-utilities ===================
+
+// =================== special ===================
+.special {
+  padding-top: 95px;
+  padding-bottom: 110px;
+  .title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    align-items: center;
+    text-align: center;
+    color: $mainColor;
+    margin-bottom: 64px;
+  }
+  .content {
+    & > .flex {
+      gap: 30px;
+      align-items: center;
+    }
+    .item {
+      margin-bottom: 40px;
+      img {
+        width: 100%;
+      }
+      .text {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 38px;
+        /* or 127% */
+        align-items: center;
+        color: #25292F;
+      }
+      .title {
+        margin-bottom: 40px;
+      }
+      .desc {
+        font-family: Arial;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 137% */
+        align-items: center;
+        color: #4A4A4A;
+      }
+    }
+  }
+}
+// =================== end special ===================
+
+// =================== stories ===================
+.stories {
+  background: $mainColor;
+  padding-top: 95px;
+  padding-bottom: 110px;
+  .layer {
+    background: url("../images/1.png"), url("../images/2.png");
+    background-position: top right -50px, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px auto, auto 60%;
+    padding-top: 95px;
+    padding-bottom: 110px;
+  }
+  .stories-swiper-container {
+    .swiper-wrapper {
+      gap: 20px;
+      .swiper-slide {
+        height: initial;
+      }
+    }
+  }
+  .container {
+    .title {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 46px;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+    & > p {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      /* or 137% */
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 53px;
+    }
+    .story {
+      width: 100%;
+      &.have-image {
+        width: 100%;
+      }
+      gap: 20px;
+      background: #FFFFFF;
+      box-shadow: 15px 4px 18px rgba(0, 0, 0, 0.15);
+      padding: 40px;
+      .story-content {
+        padding-top: 20px;
+        .username {
+          font-family: Roboto;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 19px;
+          align-items: center;
+          color: #000000;
+          margin-bottom: 11px;
+        }
+        .role {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          align-items: center;
+        }
+        .story-title {
+          margin-top: -20px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 23px;
+          align-items: center;
+          color: #000000;
+          margin-bottom: 28px;
+        }
+        .desc {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          /* or 157% */
+          align-items: center;
+          color: #868686;
+        }
+        .link {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          /* or 157% */
+          align-items: center;
+          color: #FF888D;
+          margin-bottom: 78px;
+        }
+      }
+      .left-box {
+        gap: 40px;
+      }
+    }
+    .swiper-pagination {
+      bottom: -60px;
+      .swiper-pagination-bullet {
+        background: #FFFFFF;
+        opacity: 0.5;
+        width: 20px;
+        height: 20px;
+        margin-right: 17px;
+      }
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        color: #fff;
+      }
+    }
+  }
+}
+// =================== end stories ===================
+
+// =================== footer ===================
+footer {
+  background: #0F374A;
+  padding: 50px 0;
+  .full-line {
+    background: #145E81;
+    height: 1px;
+  }
+  .footer-menu {
+    gap: 94px;
+  }
+  .content {
+    padding: 50px 0;
+    .logo {
+      margin-bottom: 36px;
+      img {
+        width: 120px;
+      }
+    }
+    ul {
+      li {
+        display: flex;
+        margin-bottom: 22px;
+        .img {
+          width: 35px;
+        }
+        .text {
+          flex: 1;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          /* or 137% */
+          align-items: center;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+// =================== end footer ===================
+
+// =================== copy-right ===================
+.copy-right {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 19px 0;
+  /* or 157% */
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #0B3043;
+}
+// =================== end copy-right ===================
+
+// =================== helper ===================
+.btn {
+  background: linear-gradient(94.56deg, #FFB58F 0%, #FF828C 100%);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 15px 35px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+}
+.line {
+  width: 32px;
+  height: 3px;
+  background: linear-gradient(94.56deg, #FFB58F 0%, #FF828C 100%);
+  margin-right: 20px;
+}
+// =================== end helper ===================
