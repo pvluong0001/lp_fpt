@@ -322,11 +322,10 @@ header {
 
 // =================== utilities ===================
 .utilities {
-  padding-top: 15px;
+  padding-top: 37px;
   padding-bottom: 100px;
   .left {
     margin-right: 0px;
-    padding: 10px;
     transition: all 0.3s ease-out;
     height: 55px;
     .title-wrapper {
@@ -352,15 +351,17 @@ header {
       font-size: 16px;
       line-height: 22px;
       padding: 0 15px;
+      height: 0px;
       /* or 137% */
       align-items: center;
       color: #FFFFFF;
     }
   }
   .slide-item {
-    width: 25%;
-    margin-right: 10px;
     position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 37px;
     &:hover {
       .left {
         height: 100%;
@@ -387,7 +388,7 @@ header {
     }
     .right {
       width: 100%;
-      .img {
+      img {
         width: 100%;
         height: auto;
       }
@@ -463,7 +464,6 @@ header {
     font-size: 40px;
     line-height: 46px;
     align-items: center;
-    text-align: center;
     color: $mainColor;
     margin-bottom: 64px;
   }

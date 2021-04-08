@@ -296,12 +296,11 @@ header .right .register {
 }
 
 .utilities {
-  padding-top: 15px;
+  padding-top: 37px;
   padding-bottom: 100px;
 }
 .utilities .left {
   margin-right: 0px;
-  padding: 10px;
   transition: all 0.3s ease-out;
   height: 55px;
 }
@@ -328,14 +327,16 @@ header .right .register {
   font-size: 16px;
   line-height: 22px;
   padding: 0 15px;
+  height: 0px;
   /* or 137% */
   align-items: center;
   color: #FFFFFF;
 }
 .utilities .slide-item {
-  width: 25%;
-  margin-right: 10px;
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 37px;
 }
 .utilities .slide-item:hover .left {
   height: 100%;
@@ -361,7 +362,7 @@ header .right .register {
 .utilities .slide-item .right {
   width: 100%;
 }
-.utilities .slide-item .right .img {
+.utilities .slide-item .right img {
   width: 100%;
   height: auto;
 }
@@ -429,7 +430,6 @@ header .right .register {
   font-size: 40px;
   line-height: 46px;
   align-items: center;
-  text-align: center;
   color: #04967C;
   margin-bottom: 64px;
 }

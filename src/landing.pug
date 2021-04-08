@@ -148,7 +148,7 @@ html
 
         div.utilities.container.mx-auto.relative
             div.utilities-swiper-container.overflow-hidden
-                div.swiper-wrapper.flex
+                div(class="swiper-wrapper flex-col md:flex-row")
                     div(class="slide-item swiper-slide")
                         div.left.flex-1.absolute.flex.flex-col
                             div.flex.title-wrapper.items-center
@@ -370,7 +370,8 @@ html
               1024: {
                 slidesPerView: 2
               }
-            }
+            },
+            loop: true
           });
 
           const nav = document.querySelector('nav');
