@@ -75,8 +75,9 @@ html
                                     p.font-bold DEVELOPER
                             div.body.flex.items-center.flex-col
                                 p.dev-type Android Developer
-                                p.salary 1000$ - 2000$
-                                a.btn.special Xem chi tiết
+                                div.text-center
+                                    p.salary 1000$ - 2000$
+                                    a.btn.special Xem chi tiết
                         div.member.relative.swiper-slide
                             div.head.absolute.flex.items-center
                                 div.number 02
@@ -85,8 +86,9 @@ html
                                     p.font-bold TESTER
                             div.body.flex.items-center.flex-col
                                 p.dev-type Tester
-                                p.salary 1000$ - 2000$
-                                a.btn.special Xem chi tiết
+                                div.text-center
+                                    p.salary 1000$ - 2000$
+                                    a.btn.special Xem chi tiết
                         div.member.relative.swiper-slide
                             div.head.absolute.flex.items-center
                                 div.number 03
@@ -95,18 +97,16 @@ html
                                     p.font-bold ENGINEER
                             div.body.flex.items-center.flex-col
                                 p.dev-type Software Engineer
-                                p.salary 1000$ - 2000$
-                                a.btn.special Xem chi tiết
-                        div.member.relative.swiper-slide
+                                div.text-center
+                                    p.salary 1000$ - 2000$
+                                    a.btn.special Xem chi tiết
+                        div.member.relative.swiper-slide.another-chance
                             div.head.absolute.flex.items-center
-                                div.number 04
-                                div.title
-                                    p.uppercase software
-                                    p.font-bold ENGINEER
                             div.body.flex.items-center.flex-col
-                                p.dev-type Software Engineer
-                                p.salary 1000$ - 2000$
-                                a.btn.special Xem chi tiết
+                                a.chance Còn rất nhiều cơ hội nhận 
+                                div.text-center
+                                    p.salary 30.000.000 VND
+                                    a.btn.special Xem ngay
                         //div.member.relative
                         //    div.head.absolute.flex.items-center
                         //        div.number 03
@@ -356,7 +356,8 @@ html
               768: {
                 slidesPerView: 3
               }
-            }
+            },
+            loop: true
           });
 
           const story = new Swiper('.stories-swiper-container', {

@@ -27,16 +27,8 @@
     width: 60% !important;
   }
 
-  .slider .slider-navigation {
-    height: 107px !important;
-  }
-
-  .slider .slider-navigation .arrow-left, .slider .slider-navigation .arrow-right {
-    padding: 47px 29px 41px 30px !important;
-  }
-
   .slider .slider-navigation .arrow-left .img, .slider .slider-navigation .arrow-right .img {
-    width: 100%;
+    width: 32px;
   }
 
   .fixed-block {

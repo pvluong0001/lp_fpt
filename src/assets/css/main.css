@@ -185,6 +185,21 @@ header .right .register {
   transition: all 0.4s;
   width: 300px;
 }
+.hiring .hiring-wrapper .hiring-swiper-container .swiper-wrapper .member.another-chance .body {
+  border: none;
+  background-image: linear-gradient(to right, #FFB58F 50%, transparent 50%), linear-gradient(to right, #FFB58F 50%, transparent 50%), linear-gradient(to bottom, #FFB58F 50%, transparent 50%), linear-gradient(to bottom, #FFB58F 50%, transparent 50%);
+  background-position: left top, left bottom, left top, right top;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 20px 3px, 20px 3px, 3px 20px, 3px 20px;
+}
+.hiring .hiring-wrapper .hiring-swiper-container .swiper-wrapper .member.another-chance .salary {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 50px;
+  color: #000000;
+}
 .hiring .hiring-wrapper .hiring-swiper-container .swiper-wrapper .member .head {
   top: -8px;
   left: -12px;
@@ -217,6 +232,19 @@ header .right .register {
 .hiring .hiring-wrapper .hiring-swiper-container .swiper-wrapper .member .body {
   padding: 115px 30px 44px 30px;
   border: 1px solid #E7E2E2;
+}
+.hiring .hiring-wrapper .hiring-swiper-container .swiper-wrapper .member .body .chance {
+  background: linear-gradient(94.56deg, #FFB58F 0%, #FF828C 100%);
+  border-radius: 36px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #F8F8F8;
+  padding: 10px 20px;
+  margin-top: -18px;
+  margin-bottom: 15px;
 }
 .hiring .hiring-wrapper .hiring-swiper-container .swiper-wrapper .member .body .dev-type {
   font-family: Arial;
@@ -255,6 +283,7 @@ header .right .register {
 .hiring .hiring-wrapper .hiring-swiper-container .swiper-wrapper .member:hover .body {
   background: #fff;
   box-shadow: 2px 4px 12px rgba(158, 158, 158, 0.25);
+  border: none !important;
 }
 
 .fville {
