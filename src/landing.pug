@@ -45,11 +45,11 @@ html
             div.slider.swiper-container.relative
                 div.swiper-wrapper
                     div.swiper-slide
-                        img(src="assets/images/DSC_0797.png")
+                        img(src="assets/images/banner1.png")
                     div.swiper-slide
-                        img(src="assets/images/DSC_0646.png")
+                        img(src="assets/images/banner2.png")
                     div.swiper-slide
-                        img(src="assets/images/DSC_0722.png")
+                        img(src="assets/images/banner3.png")
                 div.slider-navigation.absolute.left-0.flex.bottom-0
                     div.arrow-left.cursor-pointer.text-center
                         img.inline-block(src="assets/images/left.png")
@@ -76,7 +76,7 @@ html
                             div.body.flex.items-center.flex-col
                                 p.dev-type Android Developer
                                 p.salary 1000$ - 2000$
-                                a.btn Xem chi tiết
+                                a.btn.special Xem chi tiết
                         div.member.relative.swiper-slide
                             div.head.absolute.flex.items-center
                                 div.number 02
@@ -86,7 +86,7 @@ html
                             div.body.flex.items-center.flex-col
                                 p.dev-type Tester
                                 p.salary 1000$ - 2000$
-                                a.btn Xem chi tiết
+                                a.btn.special Xem chi tiết
                         div.member.relative.swiper-slide
                             div.head.absolute.flex.items-center
                                 div.number 03
@@ -96,7 +96,7 @@ html
                             div.body.flex.items-center.flex-col
                                 p.dev-type Software Engineer
                                 p.salary 1000$ - 2000$
-                                a.btn Xem chi tiết
+                                a.btn.special Xem chi tiết
                         div.member.relative.swiper-slide
                             div.head.absolute.flex.items-center
                                 div.number 04
@@ -106,7 +106,7 @@ html
                             div.body.flex.items-center.flex-col
                                 p.dev-type Software Engineer
                                 p.salary 1000$ - 2000$
-                                a.btn Xem chi tiết
+                                a.btn.special Xem chi tiết
                         //div.member.relative
                         //    div.head.absolute.flex.items-center
                         //        div.number 03
@@ -146,41 +146,50 @@ html
                     div.first Fville
                     div.description.text-justify Là một trong các campus của FPT Software, được xây dựng và hoàn thiện năm 2013. Với diện tích 6.4ha, Fville ẩn mình trong không gian xanh mướt, tích hợp khu làm việc với các khu tiện ích hiện đại nhất. Được xây dựng theo xu hướng phát triển chung của các doanh nghiệp phần mềm lớn trên thế giới như Infosys (Ấn Độ), Neusoft (Trung Quốc), TCS (Ấn Độ), Wipro (Ấn Độ),... Fville là không gian làm việc lý tưởng mà FPT Software muốn dành tặng cho các cán bộ nhân viên của mình.
 
-        div.utilities.container.mx-auto
+        div.utilities.container.mx-auto.relative
             div.utilities-swiper-container.overflow-hidden
-                div.swiper-wrapper
-                    div(class="swiper-slide flex items-center flex-col md:flex-row")
-                        div.left.flex-1
+                div.swiper-wrapper.flex
+                    div(class="slide-item swiper-slide")
+                        div.left.flex-1.absolute.flex.flex-col
                             div.flex.title-wrapper.items-center
                                 div.line
                                 div.title Khu thể thao
-                            div(class="description md:mb-0 text-justify") Fville không chỉ thuần túy là một văn phòng làm việc với trang thiết bị hiện đại, mà còn có khu thể thao như sân bóng đá, phòng tập gym, bể bơi, ... nhằm tạo hứng khởi trong công việc và hỗ trợ tăng cường thể lực cho nhân viên.
+                            div(class="description md:mb-0 text-justify flex-1") Fville không chỉ thuần túy là một văn phòng làm việc với trang thiết bị hiện đại, mà còn có khu thể thao như sân bóng đá, phòng tập gym, bể bơi, ... nhằm tạo hứng khởi trong công việc và hỗ trợ tăng cường thể lực cho nhân viên.
                         div.right
                             img(src="assets/images/sport.png")
-                    div(class="swiper-slide flex items-center flex-col md:flex-row")
-                        div.left.flex-1
+                    div(class="slide-item swiper-slide")
+                        div.left.flex-1.absolute.flex.flex-col
                             div.flex.title-wrapper.items-center
                                 div.line
                                 div.title Nhà trẻ
-                            div(class="description md:mb-0 text-justify") Nhà trẻ tại Fville được công ty xây dựng với quy mô rộng rãi, trang thiết bị hiện đại, do các cô giáo mầm non có kinh nghiệm phụ trách theo giáo trình giáo dục thân thiện nhất để cán bộ nhân viên có thể yên tâm làm việc khi gửi con tại đây.
+                            div(class="description md:mb-0 text-justify flex-1") Nhà trẻ tại Fville được công ty xây dựng với quy mô rộng rãi, trang thiết bị hiện đại, do các cô giáo mầm non có kinh nghiệm phụ trách theo giáo trình giáo dục thân thiện nhất để cán bộ nhân viên có thể yên tâm làm việc khi gửi con tại đây.
                         div.right
                             img(src="assets/images/nhatre.png")
-                    div(class="swiper-slide flex items-center flex-col md:flex-row")
-                        div.left.flex-1
+                    div(class="slide-item swiper-slide")
+                        div.left.flex-1.absolute.flex.flex-col
                             div.flex.title-wrapper.items-center
                                 div.line
                                 div.title Guest house
-                            div(class="description md:mb-0 text-justify") Guest house tiêu chuẩn 3 sao dành cho các chuyên gia, khách hàng, nhân viên cần làm việc qua đêm khi có nhu cầu.
+                            div(class="description md:mb-0 text-justify flex-1") Guest house tiêu chuẩn 3 sao dành cho các chuyên gia, khách hàng, nhân viên cần làm việc qua đêm khi có nhu cầu.
                         div.right
                             img(src="assets/images/guesthouse.png")
-                    div(class="swiper-slide flex items-center flex-col md:flex-row")
-                        div.left.flex-1
+                    div(class="slide-item swiper-slide")
+                        div.left.flex-1.absolute.flex.flex-col
                             div.flex.title-wrapper.items-center
                                 div.line
                                 div.title Canteen
-                            div(class="description md:mb-0 text-justify") Fville có 3 khu vực canteen với sức chứa lên đến hàng nghìn người, các quán ăn "ven đường" nằm trong khuôn viên làng phần mềm với đa dạng sự lựa chọn luôn khiến người Fville hài lòng.
+                            div(class="description md:mb-0 text-justify flex-1") Fville có 3 khu vực canteen với sức chứa lên đến hàng nghìn người, các quán ăn "ven đường" nằm trong khuôn viên làng phần mềm với đa dạng sự lựa chọn luôn khiến người Fville hài lòng.
                         div.right
                             img(src="assets/images/canteen.png")
+                    div(class="slide-item swiper-slide")
+                        div.left.flex-1.absolute.flex.flex-col
+                            div.flex.title-wrapper.items-center
+                                div.line
+                                div.title Canteen
+                            div(class="description md:mb-0 text-justify flex-1") Fville có 3 khu vực canteen với sức chứa lên đến hàng nghìn người, các quán ăn "ven đường" nằm trong khuôn viên làng phần mềm với đa dạng sự lựa chọn luôn khiến người Fville hài lòng.
+                        div.right
+                            img(src="assets/images/canteen.png")
+            div.swiper-pagination-utilities.mx-auto.absolute.w-full.text-center
 
         div.other-utilities
             div.container.mx-auto.p-0
@@ -325,10 +334,16 @@ html
             loop: true
           });
 
-          const utilities = new Swiper('.utilities-swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          });
+          if (window.innerWidth > 768) {
+            const utilities = new Swiper('.utilities-swiper-container', {
+              slidesPerView: 4,
+              spaceBetween: 10,
+              pagination: {
+                el: '.swiper-pagination-utilities',
+              },
+            });
+          }
+
 
           const hiring = new Swiper('.hiring-swiper-container', {
             // Navigation arrows

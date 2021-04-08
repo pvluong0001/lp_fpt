@@ -50,16 +50,11 @@
 
   .utilities {
     padding-top: 65px !important;
-    padding-bottom: 90px !important;
+    padding-bottom: 130px !important;
   }
 
   .utilities .left {
-    margin-right: 31px !important;
     padding: 0 !important;
-  }
-
-  .utilities .right {
-    width: 40% !important;
   }
 
   footer {

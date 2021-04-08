@@ -200,7 +200,6 @@ header {
         .member {
           margin-left: 12px;
           margin-top: 8px;
-          box-shadow: 2px 4px 12px rgba(158, 158, 158, 0.25);
           transition: all 0.4s;
           width: 300px;
           .head {
@@ -234,6 +233,7 @@ header {
           }
           .body {
             padding: 115px 30px 44px 30px;
+            border: 1px solid #E7E2E2;
             .dev-type {
               font-family: Arial;
               font-style: normal;
@@ -257,10 +257,21 @@ header {
             }
             .btn {
               margin-top: 44px;
+              background: -webkit-linear-gradient(#FFB58F, #FF828C);
+              border: 1px solid #FF828C;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              &:hover {
+                background: linear-gradient(94.56deg, #FFB58F 0%, #FF828C 100%);
+                color: #fff;
+                -webkit-background-clip: initial;
+                -webkit-text-fill-color: initial;
+              }
             }
           }
-          &:hover {
+          &:hover .body {
             background: #fff;
+            box-shadow: 2px 4px 12px rgba(158, 158, 158, 0.25);
           }
         }
       }
@@ -312,11 +323,15 @@ header {
 // =================== utilities ===================
 .utilities {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 100px;
   .left {
     margin-right: 0px;
     padding: 10px;
+    transition: all 0.3s ease-out;
+    height: 55px;
     .title-wrapper {
+      background: rgba(4, 150, 124, 0.5);
+      padding-bottom: 13px;
       .title {
         font-family: Yeseva One;
         font-style: normal;
@@ -325,26 +340,70 @@ header {
         line-height: 35px;
         /* identical to box height */
         align-items: center;
-        color: #25292F;
+        cursor: pointer;
       }
     }
     .description {
-      margin-top: 40px;
       font-family: Arial;
+      background: rgba(4, 150, 124, 0.5);
+      transition: all 0.3s ease-out;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 22px;
+      padding: 0 15px;
       /* or 137% */
       align-items: center;
-      color: #4A4A4A;
-      margin-bottom: 21px;
+      color: #FFFFFF;
     }
   }
-  .right {
-    width: 100%;
-    img {
+  .slide-item {
+    width: 25%;
+    margin-right: 10px;
+    position: relative;
+    &:hover {
+      .left {
+        height: 100%;
+        .description {
+          max-height: 100%;
+        }
+      }
+    }
+
+    .left {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      color: #fff;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 35px;
+      .flex:not(.description) {
+        padding: 10px;
+      }
+    }
+    .right {
       width: 100%;
+      .img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .swiper-pagination-utilities {
+    margin-top: 54px;
+    .swiper-pagination-bullet {
+      opacity: 0.5;
+      width: 20px;
+      height: 20px;
+      margin-right: 17px;
+    }
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #000;
     }
   }
 }
